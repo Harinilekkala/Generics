@@ -6,6 +6,8 @@ namespace generic
     {
         public static void Main(string[] args)
         {
+            var log = NLog.LogManager.GetCurrentClassLogger();
+            log.Info("This is generics nlog file");
             GenericsCases.Arrayclass program = new GenericsCases.Arrayclass();
             int[] intArry = { 1, 2, 3, 4, 5, 6 };
             double[] doubleArry = { 1.1, 2.2, 3.3, 4.4, 5.5 };
